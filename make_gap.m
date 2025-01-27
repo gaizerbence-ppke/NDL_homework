@@ -7,7 +7,7 @@ function [minval, maxval] = make_gap(minvalin, maxvalin)
             maxval = 10;
         else
             minval = min(0, minval);
-            maxval = max(0, maxvalout);
+            maxval = max(0, maxval);
             dist = maxval - minval;
             minval = minval - dist / 2;
             maxval = maxval + dist / 2;
